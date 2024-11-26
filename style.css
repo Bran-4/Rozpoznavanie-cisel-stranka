@@ -1,0 +1,72 @@
+canvas {
+    background-color: rgb(255, 255, 255);
+    align-self: center;
+    /*padding: 5px;*/
+    border-radius: 5px;
+    image-rendering: pixelated; /* Ensure we see clear pixelation */
+}
+body{
+    background-color:rgb(54, 54, 54);
+}
+.tlacitko{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border:0px;
+    width: 80%;
+
+}
+.textik{
+    font-size: 30px;    
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Horizontální centrování */
+    align-items:center; /* Vertikální centrování */
+    /*height: 100%;*/ 
+
+}
+.center_container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items:center;
+    background-color: rgb(93, 93, 93);
+    border-style: solid;  /* Štýl ohraničenia, napr. solid, dashed, atď. */
+    border-width: 5px;    /* Hrúbka ohraničenia pre všetky strany */
+    border-color: rgb(93, 93, 93);; 
+    border-radius: 10px;
+    transition: height 0.7s ease;
+    overflow: hidden;  
+}
+
+#output {
+    font-family: 'Courier New', Courier, monospace; /* Zmena typu písma */
+    font-size: 30px;                                /* Zmena veľkosti textu */
+    color: white;                                    /* Zmena farby textu */                    
+    padding: 10px;                               /* Vnútorné odsadenie okolo textu */                 
+}
+
+.menu {
+    list-style-type: none;     /* Odstránenie odrážok zo zoznamu */
+    margin: 0;                 /* Odstránenie vonkajšieho okraja */
+    padding: 0;                /* Odstránenie vnútorného odsadenia */
+    background-color: #333;    /* Pozadie menu */
+    overflow: hidden;          /* Zabezpečí, že položky budú zarovnané správne */
+}
+
+.menu li {
+    float: left;               /* Položky sa zoradia horizontálne */
+}
+
+.menu li a {
+    display: block;            /* Zabezpečí, že celé pole odkazu je klikateľné */
+    color: white;              /* Farba textu */
+    text-align: center;        /* Zarovnanie textu na stred */
+    padding: 14px 20px;        /* Odsadenie vnútri odkazu */
+    text-decoration: none;     /* Odstránenie podčiarknutia odkazu */
+}
+
+.menu li a:hover {
+    background-color: #111;    /* Farba pozadia pri hover efektoch */
+}
